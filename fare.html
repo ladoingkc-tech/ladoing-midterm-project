@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Fare Estimator</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="C:/Users/acer/OneDrive/Documents/pathfit/2/POS/midterm_project/styles.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>Fare Estimator</h1>
+</header>
+
+<!-- Navigation menu -->
+<nav>
+    <a href="file:///C:/Users/acer/OneDrive/Documents/pathfit/2/POS/midterm_project/index.html">Home</a>
+    <a href="file:///C:/Users/acer/OneDrive/Documents/pathfit/2/POS/midterm_project/fare.html">Fare Estimator</a>
+    <a href="file:///C:/Users/acer/OneDrive/Documents/pathfit/2/POS/midterm_project/about.html">About</a>
+</nav>
+
+<!-- Main calculator container -->
+<section class="container">
+
+<h2>Fare Estimator</h2>
+
+<!-- Fare Estimator Box -->
+<div class="fare-box">
+
+<label>Enter Distance (km):</label>
+<br>
+<input type="number" id="distance" placeholder="Enter distance" min="0">
+
+<br><br>
+
+<label>Select Transport:</label>
+<br>
+
+<select id="transport">
+<option value="jeepney">Jeepney</option>
+<option value="bus">Bus</option>
+<option value="tricycle">Tricycle</option>
+</select>
+<br><br>
+    <label>Select Category:</label>
+    <br>
+    <select id="category">
+    <option value="regular">Regular</option>
+    <option value="senior">Senior Citizen</option>
+    <option value="student">Student</option>
+    <option value="pwd">PWD</option>
+</select>
+<br><br>
+
+<button onclick="calculateFare()">Calculate Fare</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+</section>
+
+<!-- Connect JavaScript file -->
+<script src="script.js"></script>
+<footer>
+<p>Transportation Fare Estimator Web App</p>
+<p>© 2026 Fare Estimator System | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
